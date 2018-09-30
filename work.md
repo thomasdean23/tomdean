@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: My Work
+permalink: /my-work/
 ---
 
 Hello, I'm Tom, a 27 year old freelance web designer working from a small office in Cardiff. I'm extremely passionate about the web and its potential. Combining creativity with technical ability to produce attractive, user-friendly and engaging websites is what excites me.

@@ -1,0 +1,43 @@
+<div class="call-to-action">
+	<h4>Let's Work Together</h4>
+	<p>Learn how I can help you revolutionise your startups design DNA.</p>
+	<a href="#">Get in touch</a>
+</div>
+
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+	      <h5 class="p-name">
+            {%- if site.author -%}
+              {{ site.author | escape }}
+            {%- else -%}
+              {{ site.title | escape }}
+            {%- endif -%}
+            </li>
+            </h5>
+        <ul class="contact-list">
+            {%- if site.email -%}
+            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            {%- endif -%}
+            <li><a href="tel:07414773265">07414 773265</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+	      <h5>Social</h5>
+        {%- include social.html -%}
+      </div>
+
+      <div class="footer-col footer-col-3">
+	      <h5>Meta</h5>
+        <p>{{- site.description | escape -}}</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>

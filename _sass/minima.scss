@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+// Define defaults for each variable.
+
+$base-font-family: 'Karla', sans-serif;
+$base-font-size:   18px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+$title-font-family: 'Kubik', sans-serif;
+
+$spacing-unit:     30px !default;
+
+$text-color:       #27394d !default;
+$background-color: #efeae7 !default;
+$brand-color:      #27394d !default;
+$secondary-color:  #7B7D4B !default;
+
+$grey-color:       #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+
+$table-text-align: left !default;
+
+// Width of the content area
+$content-width:    1100px !default;
+
+$paragraph-width:  800px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+// Import partials.
+@import
+  "minima/base",
+  "minima/layout",
+  "minima/syntax-highlighting"
+;
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: $title-font-family;
+}
+
+.post-title {
+	font-weight:bold;
+}
+
+.site-header {
+	padding: $spacing-unit 0;
+	border-top: $spacing-unit / 2 solid darken( $background-color, 5% );
+	border-bottom: none;
+}
+
+.site-title {
+	color:$text-color;
+	font-weight: bold;
+}
+
+.site-title, .site-title:visited {
+	color:$text-color;
+}
+
+.site-nav .page-link {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.site-nav .page-link:hover {
+	border-bottom:5px solid darken( $background-color, 5% );
+}
+
+.post-content p {
+	max-width: $paragraph-width;
+}
+
+.post-content .full p {
+	max-width:none;
+}
+
+blockquote {
+	color:$text-color;
+	border-left-color: darken( $background-color, 5% );
+}
+
+.call-to-action {
+	text-align: center;
+	margin:$spacing-unit 0 $spacing-unit * 2 0;
+	padding: $spacing-unit $spacing-unit 0;
+}
+
+.call-to-action:before {
+	content:'';
+	display: block;
+	width:$spacing-unit;
+	height: $spacing-unit / 3;
+	background: darken( $background-color, 5% );
+	margin:-$spacing-unit auto $spacing-unit auto;
+}
+
+.call-to-action h4 {
+	font-size:$base-font-size * 2;
+	font-weight: bold;
+}
+
+.call-to-action a {
+	border-radius: 100px;
+	padding: $spacing-unit / 2.25 $spacing-unit / 1.25;
+	background: $secondary-color;
+	color:$background-color;
+	margin: $spacing-unit / 2 0 0 0;
+	display: inline-block;
+	font-weight: bold;
+}
+
+.call-to-action a:hover {
+	background: darken( $secondary-color, 5% );
+}
+
+.site-footer {
+	border:none;
+	background: darken( $background-color, 5% );
+	padding: $spacing-unit * 2 0;
+}
+
+.site-footer h5 {
+	color: $text-color;
+	font-size: $base-font-size;
+	font-family: $base-font-family;
+	font-weight: bold;
+	position: relative;
+	display: inline-block;
+	z-index: 2;
+}
+
+.site-footer h5:after {
+	content:'';
+	position: absolute;
+	bottom:3px;
+	left:0;
+	display: block;
+	background:$background-color;
+	height: $spacing-unit / 3;
+	width:100%;
+	z-index: -1;
+}
+
+.site-footer a {
+	color: $text-color;
+	font-size: $base-font-size;
+	font-weight: bold;
+}
