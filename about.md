@@ -8,7 +8,7 @@ Hello, I'm Tom, a 27 year old freelance web designer working from a small office
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat sapien ipsum, eget tincidunt purus pellentesque quis.
 
-I have over 6 years of professional experience, and many years before that as a hobbyist. During that period I've helped hundreds of businesses with their online marketing efforts, increasing leads and sales and better connecting their brands to their customers. For me it's about helping businesses realise their online presence.
+I have over 6 years of professional experience, and many years before that as a hobbyist. During that period I've helped hundreds of businesses with their online marketing efforts, increasing leads and sales and better connecting their brands to their customers. For me it's about helping businesses realise their online presence...
 
 <div class="full" markdown="1">
 
