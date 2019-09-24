@@ -13,7 +13,7 @@ $title-font-family: 'Kubik', sans-serif;
 $spacing-unit:     30px !default;
 
 $text-color:       #27394d !default;
-$background-color: #efeae7 !default;
+$background-color: #f8f8f8 !default;
 $brand-color:      #27394d !default;
 $secondary-color:  #7B7D4C !default;
 
@@ -57,16 +57,12 @@ $on-laptop:        800px !default;
 
 h1,h2,h3,h4,h5,h6 {
 	font-family: $title-font-family;
-}
-
-.post-title {
 	font-weight:bold;
 }
 
 .site-header {
 	padding: $spacing-unit 0;
-	border-top: $spacing-unit / 2 solid darken( $background-color, 5% );
-	border-bottom: none;
+	border:none;
 }
 
 .site-title {
@@ -98,6 +94,12 @@ h1,h2,h3,h4,h5,h6 {
 blockquote {
 	color:$text-color;
 	border-left-color: darken( $background-color, 5% );
+}
+
+.recent-work {
+	padding: $spacing-unit * 2 0;
+	margin:$spacing-unit * 2 0;
+	border-top:1px solid darken( $background-color, 5% );
 }
 
 .call-to-action {

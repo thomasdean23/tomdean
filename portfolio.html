@@ -1,0 +1,10 @@
+---
+layout: page
+title: Portfolio
+permalink: /portfolio/
+---
+
+{% for item in site.portfolio %}
+  <h2>{{ item.title }}</h2>
+  <p><a href="{{ item.url }}">{{ item.title }}</a></p>
+{% endfor %}
